@@ -5,7 +5,7 @@ const HomeIcon = () => {
   return (
     <div className="Counter">
       <button
-        onClick={() => {
+        onClick={() => if(value!==0){
           setValue(value - 1);
         }}
       >
