@@ -1,12 +1,14 @@
 import { useState } from "react";
-import "./HomeIcon.css"
+import "./HomeIcon.css";
 const HomeIcon = () => {
   const [value, setValue] = useState(0);
   return (
     <div className="Counter">
       <button
-        onClick={() => if(value!==0){
-          setValue(value - 1);
+        onClick={() => {
+          if (value !== 0) {
+            setValue(value - 1);
+          }
         }}
       >
         -
